@@ -21,6 +21,8 @@
         z-index: 1;
         background-color: #fff;
         translate: 0px -100%;
+        -ms-translate: 0px -100%;
+        -webkit-translate: 0px -100%;
         transition: 500ms;
         box-shadow: 0 0 100px var(--shadow-color);
     }
@@ -58,6 +60,8 @@
 
     .is_open{
         translate: 0px 0px;
+        -ms-translate: 0px 0px;
+        -webkit-translate: 0px 0px;
     }
 
 
