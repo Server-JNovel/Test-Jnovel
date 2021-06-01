@@ -234,9 +234,9 @@ p{
     justify-content: center;
     color: #fff;
     min-width: 100%;
-    transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -webkit-transform: translateX(0%);
+    transform: translate(10%);
+    -ms-transform: translate(0%);
+    -webkit-transform: translate(0%);
     transition: 500ms;
 }
 
