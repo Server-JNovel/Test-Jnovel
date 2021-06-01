@@ -34,7 +34,10 @@ function change_slide(dir=null,go_to_slide=null){
             currentSlide = 1;
             var translate_value=0;
         }else{
-            translate_value=parseInt($(".slide").css("translate")) +dir*100;
+            var translateMatrix = $('.slide').css('-webkit-transform').split(/[()]/)[1];
+            var translateX = translateMatrix.split(',')[4];
+            translate_value= parseInt(translateX)+dir*100;
+            
         }
     }
 
@@ -43,11 +46,10 @@ function change_slide(dir=null,go_to_slide=null){
         translate_value = (go_to_slide -1) *-100;
     }
 
-    $(".slide").css("translate",String(translate_value)+"%");
+    $(".slide").css("-webkit-transform","translate("+String(translate_value)+"%"+")");
     $(".slide-counter").children("#"+String(currentSlide)).addClass("is_active")
     $("#prev-btn,#next-btn").attr("disabled","disabled")
     interval = false;
-    console.log(interval)
 }
 
 $("#next-btn").click(function(){
