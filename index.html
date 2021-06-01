@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/css/jnovel.css" type="text/css" >
+    <link rel="stylesheet" href="static/css/mobile.css" type="text/css" >   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>JNovel | Home</title>
+    
+</head>
+<body>
+
+    <div class="shadow"></div>
+
+    <!--Header-->
+    <header class="main-header">
+        <div class="mobile-menu">
+            <button class="item" id="m-m-btn"><i class="fas fa-bars"></i></button>
+            <a href="#" class="logo-container brandmark"><img src="static/image/brandmark.svg" class="logo"></a>
+            <button class="item" id="m-o-sa-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <a href="#" class="logo-container combination-mark"><img src="static/image/combination-mark.svg" class="logo"></a>
+
+        <div class="header-items">
+
+            <ul class="navigation-bar">
+
+                <li class="item"><a href="#">Serie</a></li>
+                <li class="item"><a href="#">Top</a></li>
+                <li class="item"><a href="#">Calendario</a></li>
+                <li class="item"><a href="#">Notizie</a></li>
+                <!--<li class="item bookmark"><a href="#"><i class="fas fa-bookmark"></i></a></li>
+                <li class="item"><a href="#"><i class="fas fa-user"></i></a></li>-->
+
+                <li class="item"><a href="#">Login</a></li>
+                <li class="item" id="o-sa-btn"><a href="#"><i class="fas fa-search"></i></a>
+            </ul>
+        
+        </div>
+    </header>
+
+
+    <div class="search-area">
+        <form class="form">
+            <div class="input-container">
+                <button id="s-btn"><i class="fas fa-search"></i></button>
+                <input type="text" class="text-input round" placeholder="Cerca...">
+                <button id="c-sa-btn"><i class="fas fa-times"></i></button>
+            </div>
+        </form>
+        <div class="search-result">
+            <div class="result">
+                <a href="#">
+                    <img src="static/image/acmi-card.png">
+                    <h4>A certain magical index</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+  
+
+    <div class="slider-container">
+        <button id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider">
+            <div class="slide">
+                <a href="#">
+                    <img src="static/image/acmi-slide-image.png" class="slide-image">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="#">
+                    <img src="static/image/ww-slide-image.png" class="slide-image">
+                </a>
+            </div>
+        </div>
+        <button id="next-btn"><i class="fas fa-chevron-right"></i></button>
+        <div class="slide-counter">
+            <span id="1" class="is_active" onclick="change_slide(null,1)"></span>
+            <span id="2" onclick="change_slide(null,2)"></span>
+        </div>
+    </div>
+
+    <div class="content-wrap">
+        <div class="left-container">
+            <div class="just-added container">
+                <h2 class="title">Appena Aggiunti</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/ww-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>  
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="static/image/acmi-card.png" alt="">
+                            <div class="card-text">
+                                <h4>A certain magical index</h4>
+                                <p>Capitolo 1 -parte 1 the best light novel ever</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="most-viewed container">
+                <h2 class="title">Più Visti</h2>
+                <div>
+                    <div class="mv container-item">
+                        <img src="static/image/acmi-card.png" alt="" class="mv-img">
+                        <div class="mv-text">
+                            <h4>A Certain Magical Index</h4>
+                        </div>
+                    </div>
+                    <div class="mv container-item">
+                        <img src="static/image/acmi-card.png" alt="" class="mv-img">
+                        <div class="mv-text">
+                            <h4>A Certain Magical Index</h4>
+                        </div>
+                    </div>
+                    <div class="mv container-item">
+                        <img src="static/image/acmi-card.png" alt="" class="mv-img">
+                        <div class="mv-text">
+                            <h4>A Certain Magical Index</h4>
+                        </div>
+                    </div>
+                    <div class="mv container-item">
+                        <img src="static/image/acmi-card.png" alt="" class="mv-img">
+                        <div class="mv-text">
+                            <h4>A Certain Magical Index</h4>
+                        </div>
+                    </div>
+                    <div class="mv container-item">
+                        <img src="static/image/acmi-card.png" alt="" class="mv-img">
+                        <div class="mv-text">
+                            <h4>A Certain Magical Index</h4>
+                        </div>
+                    </div>
+                    <div class="mv container-item">
+                        <img src="static/image/acmi-card.png" alt="" class="mv-img">
+                        <div class="mv-text">
+                            <h4>A Certain Magical Index</h4>
+                        </div>
+                    </div>
+                    <div class="mv container-item">
+                        <img src="static/image/acmi-card.png" alt="" class="mv-img">
+                        <div class="mv-text">
+                            <h4>A Certain Magical Index</h4>
+                        </div>
+                    </div>
+                    <div class="mv container-item">
+                        <img src="static/image/acmi-card.png" alt="" class="mv-img">
+                        <div class="mv-text">
+                            <h4>A Certain Magical Index</h4>
+                        </div>
+                    </div>
+                    <div class="mv container-item">
+                        <img src="static/image/acmi-card.png" alt="" class="mv-img">
+                        <div class="mv-text">
+                            <h4>A Certain Magical Index</h4>
+                        </div>
+                    </div>
+                    <div class="mv container-item">
+                        <img src="static/image/acmi-card.png" alt="" class="mv-img">
+                        <div class="mv-text">
+                            <h4>A Certain Magical Index</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="status container">
+                <h2 class="title">Stati</h2>
+                <div class="state container-item">
+                    <img src="static/image/acmi-card.png" alt="" class="state-img">
+                    <div class="state-text">
+                        <h4>A Certain Magical Index</h4>
+                        <p>Capitolo 1 parte 2 </p>
+                        <p>Stato: In traduzione</p>
+                    </div>
+                </div>
+                <div class="state container-item">
+                    <img src="static/image/ww-card.png" alt="" class="state-img">
+                    <div class="state-text">
+                        <h4>Wandering Witch - The Journey of Elaina</h4>
+                        <p>Capitolo 1 parte 2 </p>
+                        <p>Stato: In traduzione</p>
+                    </div>
+                </div>
+                <div class="state container-item">
+                    <img src="static/image/acmi-card.png" alt="" class="state-img">
+                    <div class="state-text">
+                        <h4>A Certain Magical Index</h4>
+                        <p>Capitolo 1 parte 2 </p>
+                        <p>Stato: In traduzione</p>
+                    </div>
+                </div>
+                <div class="state container-item">
+                    <img src="static/image/acmi-card.png" alt="" class="state-img">
+                    <div class="state-text">
+                        <h4>A Certain Magical Index</h4>
+                        <p>Capitolo 1 parte 2 </p>
+                        <p>Stato: In traduzione</p>
+                    </div>
+                </div>
+                <div class="state container-item">
+                    <img src="static/image/acmi-card.png" alt="" class="state-img">
+                    <div class="state-text">
+                        <h4>A Certain Magical Index</h4>
+                        <p>Capitolo 1 parte 2 </p>
+                        <p>Stato: In traduzione</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="last-news container">
+                <h2 class="title">Ultime Notizie</h2>
+                <div class="container-item">
+                    <a href="#">
+                        <h4>Kazuma Kamachi ferma a certian magical index</h4>
+                        <p>(Fake News)Nelle ultime ore si è scperto che kazuma kamachi ha intenzione di interromepere la sua novel più importante</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <footer class="footer">
+        
+        <div class="footer-top">
+
+            <div class="follow-us">
+                <p>Seguici Su: <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-telegram"></i></a> <a href="#"><i class="fab fa-discord"></i></a></p>
+            </div>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Chi siamo</a>
+                <a href="#">Unisciti a noi</a>
+                <a href="#">informativa sulla privacy</a>
+                <a href="#">Contattaci</a>
+                <a href="#" class="login">Login</a>
+                <a href="#">Registrati</a>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <h3>Copyright JNovel, tutti i diritti sono riservati</h3>
+        </div>
+
+    </footer>
+
+    <script src="static/js/app.js"></script>
+
+</body>
+</html>
